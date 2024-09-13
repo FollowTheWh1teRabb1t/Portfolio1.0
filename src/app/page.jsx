@@ -10,14 +10,23 @@ import HiddenDiv from '../components/hiddenDiv/hiddenDiv'
 import Carrousel from '../components/carrousel/carrousel'
 import CarrouselArea from '../components/carrouselAREA/carrouselAREA';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
+
+
 
 export default function Home() {
 
+  useEffect(() => {
+    // Este código só será executado no cliente
+    const element = document.getElementById('some-element');
+    if (element) {
+      console.log(element);
+    }
+  }, []);
 
   return (
-        <main>
+        <main id="some-element">
         <Header pathIMG="/assets/letter-f.png"/>
         <Sobre imgPath="/assets/perfil.png" img2Path="/assets/coding.webp"/>
         <Tecnologias/>
