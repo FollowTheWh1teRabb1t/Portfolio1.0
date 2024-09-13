@@ -7,8 +7,6 @@ import Sobre from '../components/sobre/sobre'
 import Contato from '../components/contato/contato'
 import Footer from '../components/footer/footer'
 import HiddenDiv from '../components/hiddenDiv/hiddenDiv'
-import Carrousel from '../components/carrousel/carrousel'
-import CarrouselArea from '../components/carrouselAREA/carrouselAREA';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
@@ -31,7 +29,6 @@ export default function Home() {
         <Sobre imgPath="/assets/perfil.png" img2Path="/assets/coding.webp"/>
         <Tecnologias/>
         <Contato/>
-        <CarrouselArea />
         <Footer/>
         </main>
   );
