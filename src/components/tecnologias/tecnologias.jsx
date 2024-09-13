@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useState } from 'react';
 import styles from './tecnologias.module.css';
 import Card from '../cards/card';
