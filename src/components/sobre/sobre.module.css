@@ -1,0 +1,217 @@
+
+.mainBox {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.sessionSobre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    background-image: url(./background.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px black solid;
+    color: white;
+    padding: 100px;
+}
+
+.boxImg {
+    width: 210px;
+    height: 210px;
+    border: 3px solid black;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.toggleButton {
+    position: absolute;
+    top: 700px;
+    left: -45px;
+    z-index: 1000;
+    transform: rotate(90deg);
+    border: 5px solid black;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #100e0e, #0026f5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    z-index: 999;
+    transition: left 1.0 ease;
+    box-shadow: 0 10px 10px rgb(0,0,0,1.0);
+}
+
+.toggleButton.shifted {
+    top: 600px;
+    left: 270px;
+    transition: left 1.0s ease;
+}
+
+.toggleButton.closed {
+    top: 600px;
+    left: -35px;
+    transition: left 1.0s ease;
+}
+
+.sidebar {
+    position: absolute;
+    top: 340px;
+    left: -300px;
+    width: 300px;
+    height: 80vh;
+    background: #333;
+    color: white;
+    padding: 20px;
+    transition: left 1.0s ease;
+    z-index: 900;
+    box-shadow: 0 10px 10px rgb(0,0,0, 1.5);
+
+    
+}
+
+.sidebar.open {
+    left: 0;
+    border-radius: 75px;
+    background: -webkit-linear-gradient(left, #100e0e, #0026f5);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.sidebar.closed {
+    border-radius: 75px;
+    background: -webkit-linear-gradient(left, #100e0e, #0026f5);
+}
+
+.collegeIcon {
+    position: absolute;
+    width: 90px;
+    top: 100px;
+    border: black 5px solid;
+    border-radius: 60%;
+
+}
+
+.collegeName {
+    position: absolute;
+    font-size: 14px;
+    top: 120px;
+    left: 120px
+}
+
+.courseIcon {
+    position: absolute;
+    width: 90px;
+    top: 200px;
+    border: black 5px solid;
+    border-radius: 50%;
+}
+
+.courseTitle {
+    font-size: 14px;
+    position: absolute;
+    top: 220px;
+    left: 120px;
+}
+
+
+.perfil {
+    width: 205px;
+    height: 205px;
+    border-radius: 100%;
+}
+
+
+.presentation {
+    width: 800px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 5.0s ease-in-out forwards;
+
+}
+
+.titleSec {
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+}
+
+.course2Icon {
+    position: absolute;
+    top: 310px;
+    left: 20px;
+    width: 90px;
+    border: 5px solid black;
+    border-radius: 50%;
+    filter: brightness(2.0);
+}
+
+
+
+.course2Title {
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.onion {
+    background-color: #ffffff;
+    border: 5px solid black;
+    border-radius: 100%;
+}
+
+.iconVerify0 {
+    width: 25px;
+    height: 25px;
+}
+
+.iconVerify1 {
+    width: 20px;
+    height: 20px;
+}
+
+.iconVerify2 {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .toggleButton {
+        top: 100px;
+    }
+
+    .presentation {
+        width: 300px;
+    }
+}
+
+
+
+
+  

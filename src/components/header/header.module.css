@@ -1,0 +1,48 @@
+.top {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Adicione uma cor de fundo, se necessário */
+    z-index: 1000; /* Certifique-se de que o cabeçalho está em uma camada superior */
+}
+
+.boxImg {
+    padding: 30px;
+
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.navBar {
+    padding: 50px;
+
+}
+
+.navBar a {
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        display: none; /* Esconde a barra de navegação em telas menores */
+    }
+
+    .top {
+        justify-content: center;
+    }
+}

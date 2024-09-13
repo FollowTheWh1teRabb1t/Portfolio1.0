@@ -1,0 +1,105 @@
+.contato {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    background-image: url(./global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-bus.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid black;
+}
+
+
+
+.boxSocialMedia {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    font-size: 36px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boxStructure {
+    width: 500px;
+}
+
+.icon {
+    height: 50px;
+}
+
+.textDescription {
+    font-size: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.formGroup label {
+    font-size: 20px;
+}
+
+.formGroup input {
+    width: 800px;
+    border: 5px solid black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.formGroup textArea {
+    width: 800px;
+    height: 300px;
+    border: 5px solid black;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.buttonForm {
+    width: 800px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .contato {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxSocialMedia {
+        width: 450px;
+        height: 270px;
+        position: relative;
+        top: 3%;
+        
+    }
+
+    .boxStructure {
+        width: 400px;
+    }
+    .textDescription {
+        font-size: 15px;
+    
+    }
+
+    .formGroup {
+        display: none;
+    }
+}
